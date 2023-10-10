@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Swiper JS | Slider</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="/asset/img/swiper.png" alt="logo" />
+      <p>Scroll or Drag</p>
+      <button>Demo</button>
+    </nav>
+
+    <!-- Swiper Slider with Images-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-4.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-5.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-6.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-7.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-8.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/asset/img/hero-9.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper Slider Script link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        'direction': 'horizontal',
+        spaceBetween: 30,
+        loop: true,
+        speed: 3000,
+        watchSlidesProgress: true,
+        autoplay: {
+          delay: 2500,
+          desableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
